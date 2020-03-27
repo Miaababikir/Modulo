@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Form;
+use App\Submission;
 use App\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -69,6 +70,18 @@ class FormTest extends TestCase
 
         $this->assertDatabaseMissing('forms', ['name' => $form->name]);
 
+    }
+
+    /**
+     * @test
+     */
+    public function auth_user_can_get_his_forms_submissions()
+    {
+        $user = $this->signIn();
+        $form = factory(Form::class)->create(['user_id' => $user->id]);
+        factory(Submission::class, 5)->create(['form_id' => $form->id]);
+
+        $this->get("/forms/$form->id")->assertViewHas('form');
     }
 
     /**

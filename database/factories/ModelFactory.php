@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
 use App\Form;
+use App\Submission;
 use App\User;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
@@ -33,5 +34,12 @@ $factory->define(Form::class, function (Faker $faker) {
         'name' => $faker->name,
         'forward_to' => $faker->unique()->safeEmail,
         'user_id' => factory(User::class)
+    ];
+});
+
+$factory->define(Submission::class, function (Faker $faker) {
+    return [
+        'form_id' => factory(Form::class),
+        'data' => json_encode(['title' => 'this is it', 'body' => 'this is body'])
     ];
 });

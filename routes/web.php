@@ -21,6 +21,7 @@ Auth::routes();
 Route::middleware('auth')->group(function () {
     Route::get('/forms', 'FormController@index')->name('forms');
     Route::post('/forms', 'FormController@store')->name('forms.store');
+    Route::get('/forms/{form}', 'FormController@show')->name('forms.show');
     Route::put('/forms/{form}', 'FormController@update')->name('forms.update');
     Route::delete('/forms/{form}', 'FormController@destroy')->name('forms.destroy');
 

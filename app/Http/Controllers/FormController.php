@@ -39,6 +39,11 @@ class FormController extends Controller
         return response()->json(['message' => 'Updated']);
     }
 
+    public function show(Form $form)
+    {
+        return view('forms.show', ['form' => $form]);
+    }
+
     public function destroy(Form $form)
     {
         $form->delete();

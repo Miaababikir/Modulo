@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 class Form extends Model
 {
     protected $guarded = [];
+    protected $with = ['submissions'];
 
     protected static function booted()
     {
