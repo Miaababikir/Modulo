@@ -23,5 +23,6 @@ Route::middleware('auth')->group(function () {
     Route::post('/forms', 'FormController@store')->name('forms.store');
     Route::put('/forms/{form}', 'FormController@update')->name('forms.update');
     Route::delete('/forms/{form}', 'FormController@destroy')->name('forms.destroy');
+
 });
 

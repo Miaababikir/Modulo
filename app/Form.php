@@ -15,4 +15,9 @@ class Form extends Model
             $form->token = Str::random(6);
         });
     }
+
+    public function submissions()
+    {
+        return $this->hasMany(Submission::class);
+    }
 }

@@ -23,6 +23,8 @@ class FormController extends Controller
         ]);
 
         auth()->user()->forms()->create($data);
+
+        return response()->json(['message' => 'Created']);
     }
 
     public function update(Request $request, Form $form)
@@ -33,10 +35,14 @@ class FormController extends Controller
         ]);
 
         $form->update($data);
+
+        return response()->json(['message' => 'Updated']);
     }
 
     public function destroy(Form $form)
     {
         $form->delete();
+
+        return response()->json(['message' => 'Deleted']);
     }
 }
