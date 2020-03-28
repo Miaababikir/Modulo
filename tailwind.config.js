@@ -1,6 +1,12 @@
 module.exports = {
   theme: {
-    extend: {}
+    extend: {
+        fontFamily: {
+            sans: [
+                'Nunito'
+            ],
+        },
+    }
   },
   variants: {},
   plugins: [

@@ -1,7 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
@@ -11,17 +12,13 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
 </head>
-<body class="h-screen bg-gray-200 antialiased leading-none font-sans">
-<div id="app">
-    @include('includes.nav')
+<body class="h-screen antialiased leading-none font-sans bg-pattern">
 
-        <div class="max-w-5xl mx-auto px-8 py-20">
-            @yield('content')
-        </div>
+<div class="bg-teal-400 h-2"></div>
+<div>
+    @yield('content')
 </div>
-
-<!-- Scripts -->
-<script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
