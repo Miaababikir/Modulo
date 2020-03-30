@@ -13,17 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::view('/', 'index');
 
 Auth::routes();
-
-//Route::view('/forms/show', 'forms.show');
-//Route::view('/forms/create', 'forms.create');
-//Route::view('/forms/edit', 'forms.edit');
-//Route::view('/forms', 'forms.index');
-//Route::view('/account', 'account.edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/forms', 'FormController@index')->name('forms');
