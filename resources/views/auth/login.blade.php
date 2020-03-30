@@ -1,13 +1,13 @@
 @extends('layouts.landing')
 
 @section('content')
-    <div class="flex flex-col justify-center items-center h-full py-12">
+    <div class="flex flex-col justify-center items-center py-12 px-4">
         <div class="flex items-center">
             <img class="h-16" src="{{ asset('img/logo.png') }}" alt="Modulo Logo">
             <a class="ml-4 text-gray-700 text-3xl font-bold" href="#">Modulo</a>
         </div>
         <div class="w-full max-w-lg mt-8">
-            <div class="flex flex-col py-10 break-words bg-white rounded shadow-2xl">
+            <div class="flex flex-col py-10 break-words bg-white rounded-lg shadow-2xl">
 
                 <div class="text-gray-700 text-xl text-center">Welcome Back!</div>
 
