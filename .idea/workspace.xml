@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1be674ad-9c5e-4025-a798-dd4bd9fe074f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Froms/form-list.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/Utilities/copy-to-clipboard.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Submission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Submission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/forms/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/API/SubmissionTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/API/SubmissionTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="1be674ad-9c5e-4025-a798-dd4bd9fe074f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +142,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/forms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -195,7 +181,7 @@
       <workItem from="1585284995064" duration="10157000" />
       <workItem from="1585370909085" duration="29000" />
       <workItem from="1585370956862" duration="12097000" />
-      <workItem from="1585542825707" duration="16806000" />
+      <workItem from="1585542825707" duration="17053000" />
     </task>
     <servers />
   </component>
