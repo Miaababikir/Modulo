@@ -25,6 +25,6 @@ class Form extends Model
 
     public function getTokenLinkAttribute()
     {
-        return config('app.url') . '/' . $this->token;
+        return config('app.url') . '/api/forms/' . $this->token;
     }
 }
