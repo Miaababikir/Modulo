@@ -15,6 +15,11 @@ class FormController extends Controller
         return view('forms.index', ['forms' => $forms]);
     }
 
+    public function create()
+    {
+        return view('forms.create');
+    }
+
     public function store(Request $request)
     {
         $data = $request->validate([

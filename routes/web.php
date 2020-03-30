@@ -20,6 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::view('/forms/show', 'forms.show');
+Route::view('/forms/create', 'forms.create');
+Route::view('/forms/edit', 'forms.edit');
 Route::view('/forms', 'forms.index');
 
 //Route::middleware('auth')->group(function () {

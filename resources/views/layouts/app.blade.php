@@ -12,7 +12,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="h-screen bg-gray-200 antialiased leading-none font-sans">
+<body class="h-screen bg-gray-100 antialiased leading-none font-sans">
 <div id="app">
     @include('includes.nav')
 
