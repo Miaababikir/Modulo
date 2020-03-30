@@ -2,12 +2,10 @@
 
 @section('content')
     <div class="flex justify-between">
-        <h2 class="text-teal-400 text-2xl">Nothing Works</h2>
+        <h2 class="text-teal-400 text-2xl">{{ $form->name }}</h2>
         <ul class="flex">
             <li><a class="text-teal-400 font-bold" href="#">Inbox</a></li>
-            <li><a class="ml-4 text-gray-500" href="#">Archive</a></li>
-            <li><a class="ml-4 text-gray-500" href="#">Spam</a></li>
-            <li><a class="ml-4 text-gray-500" href="#">Settings</a></li>
+            <li><a class="ml-4 text-gray-500" href="{{ route('forms.edit', $form->id) }}">Settings</a></li>
         </ul>
     </div>
 

@@ -5,7 +5,7 @@
         <h2 class="text-teal-400 text-2xl font-bold">New Form</h2>
     </div>
 
-    <form action="#">
+    <form action="{{ route('forms.store') }}" method="POST">
         @csrf
         <div>
             <div class="py-6 border-t-2 border-gray-300">

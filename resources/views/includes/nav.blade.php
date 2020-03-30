@@ -4,8 +4,11 @@
         <a class="ml-4 text-gray-700 text-2xl font-bold" href="#">Modulo</a>
     </div>
     <ul class="flex text-gray-800">
-        <li class=""><a href="#">Forms</a></li>
-        <li class="ml-8"><a href="#">Account</a></li>
-        <li class="ml-8"><a href="#">Logout</a></li>
+        <li class=""><a href="{{ route('forms') }}">Forms</a></li>
+        <li class="ml-8"><a href="/account">Account</a></li>
+        <li class="ml-8"><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
     </ul>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        {{ csrf_field() }}
+    </form>
 </nav>

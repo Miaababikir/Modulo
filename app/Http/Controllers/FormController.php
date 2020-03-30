@@ -29,7 +29,12 @@ class FormController extends Controller
 
         auth()->user()->forms()->create($data);
 
-        return response()->json(['message' => 'Created']);
+        return redirect()->route('forms');
+    }
+
+    public function edit(Form $form)
+    {
+        return view('forms.edit', ['form' => $form]);
     }
 
     public function update(Request $request, Form $form)
@@ -41,7 +46,7 @@ class FormController extends Controller
 
         $form->update($data);
 
-        return response()->json(['message' => 'Updated']);
+        return redirect()->route('forms');
     }
 
     public function show(Form $form)

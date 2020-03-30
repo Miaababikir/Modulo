@@ -19,18 +19,20 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::view('/forms/show', 'forms.show');
-Route::view('/forms/create', 'forms.create');
-Route::view('/forms/edit', 'forms.edit');
-Route::view('/forms', 'forms.index');
-Route::view('/account', 'account.edit');
+//Route::view('/forms/show', 'forms.show');
+//Route::view('/forms/create', 'forms.create');
+//Route::view('/forms/edit', 'forms.edit');
+//Route::view('/forms', 'forms.index');
+//Route::view('/account', 'account.edit');
 
-//Route::middleware('auth')->group(function () {
-//    Route::get('/forms', 'FormController@index')->name('forms');
-//    Route::post('/forms', 'FormController@store')->name('forms.store');
-//    Route::get('/forms/{form}', 'FormController@show')->name('forms.show');
-//    Route::put('/forms/{form}', 'FormController@update')->name('forms.update');
-//    Route::delete('/forms/{form}', 'FormController@destroy')->name('forms.destroy');
-//
-//});
+Route::middleware('auth')->group(function () {
+    Route::get('/forms', 'FormController@index')->name('forms');
+    Route::get('/forms/create', 'FormController@create')->name('forms.create');
+    Route::post('/forms', 'FormController@store')->name('forms.store');
+    Route::get('/forms/{form}', 'FormController@show')->name('forms.show');
+    Route::get('/forms/{form}/edit', 'FormController@edit')->name('forms.edit');
+    Route::put('/forms/{form}', 'FormController@update')->name('forms.update');
+    Route::delete('/forms/{form}', 'FormController@destroy')->name('forms.destroy');
+
+});
 

@@ -8,13 +8,13 @@
                 <nav class="flex justify-between">
                     <div class="flex items-center">
                         <img class="h-16" src="{{ asset('img/logo.png') }}" alt="Modulo Logo">
-                        <a class="ml-4 text-gray-700 text-3xl font-bold" href="#">Modulo</a>
+                        <a class="ml-4 text-gray-700 text-3xl font-bold" href="/">Modulo</a>
                     </div>
                     <ul class="flex items-center">
-                        <li class=""><a class="text-gray-800 hover:underline" href="#">Sign In</a></li>
+                        <li><a class="text-gray-800 hover:underline" href="{{ route('login') }}">Sign In</a></li>
                         <li class="ml-8"><a
                                 class="px-4 py-3 bg-teal-400 text-white font-bold uppercase rounded hover:bg-teal-500"
-                                href="#">Start Now</a></li>
+                                href="{{ route('register') }}">Start Now</a></li>
                     </ul>
                 </nav>
                 <div class="flex flex-col items-center mt-16 md:flex-row">
