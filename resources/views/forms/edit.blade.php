@@ -18,8 +18,8 @@
                     <div class="md:w-2/3">
                         <div>
                             <pre class="bg-gray-300 px-4 py-6 shadow rounded mb-4 overflow-y-scroll"><code
-                                    class="text-gray-700 text-sm">http://localhost:3000/api/forms/{{ $form->token }}</code></pre>
-                            <a class="text-teal-400 hover:underline" href="#">Copy Embed Code</a>
+                                    class="text-gray-700 text-sm" id="formLink">http://localhost:3000/api/forms/{{ $form->token }}</code></pre>
+                            <copy-to-clipboard selector="formLink" text="Copy Embed Code" />
                         </div>
                     </div>
                 </div>

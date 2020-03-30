@@ -16,9 +16,9 @@
 <div id="app">
     @include('includes.nav')
 
-        <div class="max-w-5xl mx-auto px-8 py-20">
-            @yield('content')
-        </div>
+    <div class="max-w-5xl mx-auto px-8 py-20">
+        @yield('content')
+    </div>
 </div>
 
 <!-- Scripts -->

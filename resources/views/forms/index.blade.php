@@ -12,9 +12,9 @@
                 <div class="flex items-center justify-between">
                     <div class="flex flex-col">
                         <a class="text-teal-400 font-bold hover:underline" href="{{ route('forms.show', $form->id) }}">{{ $form->name }}</a>
-                        <span class="mt-3 text-sm text-gray-600">{{ "http://localhost:3000/api/forms/$form->token" }}</span>
+                        <span class="mt-3 text-sm text-gray-600" id="formLink{{ $form->id  }}">{{ "http://localhost:3000/api/forms/$form->token" }}</span>
                     </div>
-                    <a class="text-teal-400 hover:underline" href="#">Copy Embed Code</a>
+                    <copy-to-clipboard selector="formLink{{ $form->id }}" text="Copy Embed Code" />
                 </div>
             </div>
         @empty

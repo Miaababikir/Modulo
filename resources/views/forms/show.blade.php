@@ -9,79 +9,18 @@
         </ul>
     </div>
 
-    <div class="flex flex-1 mt-4 relative bg-gray-100 border-t-2 border-gray-400 shadow-md rounded-b-lg overflow-hidden">
-        <div class="w-1/3 h-full pb-4 overflow-y-scroll absolute">
-            <div class="cursor-pointer bg-gray-300">
-                <div class="px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">Jone Doe</span>
-                        <span class="text-gray-700 text-sm">2020-03-28</span>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+    <div class="mt-4 bg-gray-100 border-t-2 border-gray-400 shadow-md rounded-b-lg overflow-hidden">
+        @if(count($form->submissions) == 0)
+            <div class="flex flex-col items-center justify-center w-full py-20">
+                <svg class="fill-current text-teal-400 opacity-75" width="72px" height="82px" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 72 85">
+                    <path
+                        d="M64 75h2a1 1 0 1 1 0 2h-2v2a1 1 0 1 1-2 0v-2h-2a1 1 0 1 1 0-2h2v-2a1 1 0 1 1 2 0v2zm-2-7.95V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v69c0 1.1.9 2 2 2h50.05A9 9 0 0 1 62 67.05zM54.05 77H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h56a4 4 0 0 1 4 4v63.05A9 9 0 1 1 54.05 77zM63 83a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM10 19h44a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-4c0-1.1.9-2 2-2zm0 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h44a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H10zm-1.5-4h14a.5.5 0 0 1 0 1h-14a.5.5 0 0 1 0-1zM23 8h18a1 1 0 1 1 0 2H23a1 1 0 1 1 0-2zM10 57h44a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-4c0-1.1.9-2 2-2zm0-21h44a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2v-4c0-1.1.9-2 2-2zm0 1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h44a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H10zM9 48h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm0 1v3h3v-3H9zm-.5-16h14a.5.5 0 0 1 0 1h-14a.5.5 0 0 1 0-1zm7 17h14a.5.5 0 0 1 0 1h-14a.5.5 0 0 1 0-1zm26 0h14a.5.5 0 0 1 0 1h-14a.5.5 0 0 1 0-1z"></path>
+                </svg>
+                <span class="block text-gray-700 text-lg mt-4">There is no form submissions yet!</span>
             </div>
-            <div class="bg-white hover:bg-gray-200 cursor-pointer">
-                <div class="px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">Jone Doe</span>
-                        <span class="text-gray-700 text-sm">2020-03-28</span>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
-            </div>
-            <div class="bg-white hover:bg-gray-200 cursor-pointer">
-                <div class="px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">Jone Doe</span>
-                        <span class="text-gray-700 text-sm">2020-03-28</span>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
-            </div>
-            <div class="bg-white hover:bg-gray-200 cursor-pointer">
-                <div class="px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">Jone Doe</span>
-                        <span class="text-gray-700 text-sm">2020-03-28</span>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
-            </div>
-            <div class="bg-white hover:bg-gray-200 cursor-pointer">
-                <div class="px-4 py-6">
-                    <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">Jone Doe</span>
-                        <span class="text-gray-700 text-sm">2020-03-28</span>
-                    </div>
-                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <div class="w-2/3 px-8 py-10 ml-auto">
-            <div class="py-4">
-                <div class="flex flex-col">
-                    <h2 class="text-2xl text-teal-400">John Doe</h2>
-                    <p class="mt-3 text-gray-700">Friday March 27, 2020 at 6:36am</p>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="py-4">
-                <div class="flex-col flex-col">
-                    <div class="py-4">
-                        <label class="text-gray-700 font-bold">Name</label>
-                        <p class="mt-2 text-sm text-gray-600">John Doe</p>
-                    </div>
-                    <div class="py-4">
-                        <label class="text-gray-700 font-bold">Name</label>
-                        <p class="mt-2 text-sm text-gray-600">John Doe</p>
-                    </div>
-                    <div class="py-4">
-                        <label class="text-gray-700 font-bold">Name</label>
-                        <p class="mt-2 text-sm text-gray-600">John Doe</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        @else
+            <form-list :submissions="{{ $form->submissions }}"></form-list>
+        @endif
     </div>
 @endsection

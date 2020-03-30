@@ -56,4 +56,21 @@ class SubmissionTest extends TestCase
             'form_id' => $form->id,
         ]);
     }
+
+    /**
+    * TODO find way to not store empty values
+    */
+     public function should_not_store_empty_values()
+    {
+        $form = factory(Form::class)->create();
+
+        $data = ['title' => 'This is title', 'body' => 'This is body', 'b'];
+
+        $this->post("/api/forms/$form->token", $data);
+
+        $this->assertDatabaseHas('submissions', [
+            'form_id' => $form->id,
+            'data' => json_encode($data)
+        ]);
+    }
 }
