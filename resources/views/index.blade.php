@@ -9,7 +9,7 @@
                     <a class="mx-4 text-gray-700 text-xl md:text-3xl font-bold" href="/">Modulo</a>
                 </div>
                 <div>
-                    <a class="px-3 py-2 rounded-md bg-gray-800 text-white font-bold hover:bg-gray-700 text-base md:text-lg" href="{{ route('login') }}">
+                    <a class="px-3 py-2 rounded text-gray-700 font-bold text-base md:text-lg" href="{{ route('login') }}">
                         Sign In
                     </a>
                 </div>
@@ -23,7 +23,7 @@
                         Modulo provides form endpoints as a service, so your simple sites can stay simple.
                     </p>
                     <div class="mt-8">
-                        <a class="px-3 py-2 bg-teal-400 rounded-md text-white font-bold text-base md:text-lg" href="{{ route('register') }}">
+                        <a class="px-3 py-2 bg-teal-400 rounded text-white font-bold text-base md:text-lg" href="{{ route('register') }}">
                             Start Now
                         </a>
                     </div>
