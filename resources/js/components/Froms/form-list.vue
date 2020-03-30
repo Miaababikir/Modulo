@@ -10,7 +10,7 @@
             <!--                    <p class="mt-6 text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur.</p>-->
             <!--                </div>-->
             <!--            </div>-->
-            <div class="bg-white hover:bg-gray-200 cursor-pointer" v-for="submission in submissions"
+            <div class="bg-white hover:bg-gray-200 cursor-pointer" v-for="submission in submissions" :key="submission.id"
                  @click="setSelected(submission)" :class="isSelected(submission)? 'bg-gray-300' : ''">
                 <div class="px-4 py-6">
                     <div class="flex justify-between items-center">
@@ -32,7 +32,7 @@
                 <hr class="my-4">
                 <div class="py-4">
                     <div class="flex-col flex-col">
-                        <div class="py-4" v-for="key in Object.keys(selected.data)">
+                        <div class="py-4" v-for="key in Object.keys(selected.data)" :key="key.id">
                             <label class="text-gray-700 font-bold" >{{ key }}</label>
                             <p class="mt-2 text-sm text-gray-600">{{ selected.data[key] }}</p>
                         </div>

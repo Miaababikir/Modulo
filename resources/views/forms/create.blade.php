@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container mx-auto px-8 py-16 min-h-screen">
     <div class="flex justify-start py-6">
         <h2 class="text-teal-400 text-2xl font-bold">New Form</h2>
     </div>
@@ -32,4 +33,5 @@
             </div>
         </div>
     </form>
+</div>
 @endsection

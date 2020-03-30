@@ -1,12 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex justify-between">
+<div class="container mx-auto px-8 py-16 min-h-screen">
+    <div class="flex justify-between items-center">
         <h2 class="text-teal-400 text-2xl">{{ $form->name }}</h2>
-        <ul class="flex">
-            <li><a class="text-teal-400 font-bold" href="#">Inbox</a></li>
-            <li><a class="ml-4 text-gray-500" href="{{ route('forms.edit', $form->id) }}">Settings</a></li>
-        </ul>
+        <div class="flex">
+            <a class="text-teal-400 font-bold" href="{{ route('forms') }} ">Inbox</a>
+            <a class="ml-4 text-gray-500" href="{{ route('forms.edit', $form->id) }}">Settings</a>
+        </div>
     </div>
 
     <div class="mt-4 bg-gray-100 border-t-2 border-gray-400 shadow-md rounded-b-lg overflow-hidden">
@@ -23,4 +24,5 @@
             <form-list :submissions="{{ $form->submissions }}"></form-list>
         @endif
     </div>
+</div>
 @endsection

@@ -12,11 +12,11 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans min-w-full">
+<body class="bg-gray-100 font-sans">
     <div id="app">
         @include('includes.nav')
 
-        <div class="max-w-5xl mx-auto px-8 py-20 min-h-screen">
+        <div>
             @yield('content')
         </div>
 

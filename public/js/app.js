@@ -20279,6 +20279,7 @@ var render = function() {
         return _c(
           "div",
           {
+            key: submission.id,
             staticClass: "bg-white hover:bg-gray-200 cursor-pointer",
             class: _vm.isSelected(submission) ? "bg-gray-300" : "",
             on: {
@@ -20337,7 +20338,7 @@ var render = function() {
                   "div",
                   { staticClass: "flex-col flex-col" },
                   _vm._l(Object.keys(_vm.selected.data), function(key) {
-                    return _c("div", { staticClass: "py-4" }, [
+                    return _c("div", { key: key.id, staticClass: "py-4" }, [
                       _c("label", { staticClass: "text-gray-700 font-bold" }, [
                         _vm._v(_vm._s(key))
                       ]),
