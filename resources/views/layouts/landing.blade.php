@@ -17,8 +17,8 @@
 <body class="h-screen antialiased leading-none font-sans bg-pattern">
 
 <div class="bg-teal-400 h-2"></div>
-<div>
-    @yield('content')
-</div>
+    <div class="py-10 h-full">
+        @yield('content')
+    </div>
 </body>
 </html>
