@@ -32609,7 +32609,10 @@ Vue.component('copy-to-clipboard', __webpack_require__(/*! ./components/Utilitie
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    isOpen: false
+  }
 });
 
 /***/ }),
