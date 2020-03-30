@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container mx-auto px-8">
-        <div class="py-20">
+        <div class="py-10">
             <nav class="flex justify-between items-center">
                 <div class="flex items-center">
                     <img class="h-10 md:h-16" src="{{ asset('img/logo.png') }}" alt="Modulo Logo">
