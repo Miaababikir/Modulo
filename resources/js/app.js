@@ -31,4 +31,7 @@ Vue.component('copy-to-clipboard', require('./components/Utilities/copy-to-clipb
 
 const app = new Vue({
     el: '#app',
+    data: {
+        isOpen: false
+    }
 });

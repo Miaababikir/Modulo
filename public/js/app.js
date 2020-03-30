@@ -20279,6 +20279,7 @@ var render = function() {
         return _c(
           "div",
           {
+            key: submission.id,
             staticClass: "bg-white hover:bg-gray-200 cursor-pointer",
             class: _vm.isSelected(submission) ? "bg-gray-300" : "",
             on: {
@@ -20337,7 +20338,7 @@ var render = function() {
                   "div",
                   { staticClass: "flex-col flex-col" },
                   _vm._l(Object.keys(_vm.selected.data), function(key) {
-                    return _c("div", { staticClass: "py-4" }, [
+                    return _c("div", { key: key.id, staticClass: "py-4" }, [
                       _c("label", { staticClass: "text-gray-700 font-bold" }, [
                         _vm._v(_vm._s(key))
                       ]),
@@ -32609,7 +32610,10 @@ Vue.component('copy-to-clipboard', __webpack_require__(/*! ./components/Utilitie
  */
 
 var app = new Vue({
-  el: '#app'
+  el: '#app',
+  data: {
+    isOpen: false
+  }
 });
 
 /***/ }),
@@ -32790,8 +32794,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/miaababikir/Projects/Laravel/Modulo/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/miaababikir/Projects/Laravel/Modulo/resources/css/app.css */"./resources/css/app.css");
+__webpack_require__(/*! /home/khatabwedaa/Dev/git-fork/modulo/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/khatabwedaa/Dev/git-fork/modulo/resources/css/app.css */"./resources/css/app.css");
 
 
 /***/ })

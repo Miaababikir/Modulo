@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="container mx-auto px-8 py-16 min-h-screen">
     <div class="flex justify-between items-center py-6">
         <h2 class="text-teal-400 text-2xl font-bold">{{ $form->name }}</h2>
         <a class="text-teal-400 hover:text-teal-500" href="{{ route('forms') }}">Inbox</a>
@@ -17,8 +18,9 @@
                     </div>
                     <div class="md:w-2/3">
                         <div>
-                            <pre class="bg-gray-300 px-4 py-6 shadow rounded mb-4 overflow-y-scroll"><code
-                                    class="text-gray-700 text-sm" id="formLink">{{ $form->tokenLink }}</code></pre>
+                            <pre class="bg-gray-300 px-4 py-6 shadow rounded mb-4 overflow-y-scroll">
+                                <code class="text-gray-700 text-sm" id="formLink">{{ $form->tokenLink }}</code>
+                            </pre>
                             <copy-to-clipboard selector="formLink" text="Copy Embed Code" />
                         </div>
                     </div>
@@ -32,15 +34,11 @@
                     <div class="md:w-2/3">
                         <div>
                             <label for="name" class="text-gray-700 font-bold leading-loose">Name</label>
-                            <input type="text"
-                                   class="form-input border-none shadow w-full px-4 py-4 block focus:shadow-md"
-                                   name="name" id="name" placeholder="Josh's wedding" required value="{{ $form->name }}">
+                            <input type="text" class="form-input border-none shadow w-full px-4 py-4 block focus:shadow-md" name="name" id="name" placeholder="Josh's wedding" required value="{{ $form->name }}">
                         </div>
                         <div class="mt-8">
                             <label for="forward_to" class="text-gray-700 font-bold leading-loose">Forward To</label>
-                            <input type="text"
-                                   class="form-input border-none shadow w-full px-4 py-4 block focus:shadow-md"
-                                   name="forward_to" id="forward_to" placeholder="example@test.com" value="{{ $form->forward_to }}">
+                            <input type="text" class="form-input border-none shadow w-full px-4 py-4 block focus:shadow-md" name="forward_to" id="forward_to" placeholder="example@test.com" value="{{ $form->forward_to }}">
                         </div>
                     </div>
                 </div>
@@ -53,4 +51,5 @@
             </div>
         </div>
     </form>
+</div>
 @endsection

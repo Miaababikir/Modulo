@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'index');
+Route::view('/', 'index')->middleware('guest');
 
 Auth::routes();
 
@@ -25,6 +25,5 @@ Route::middleware('auth')->group(function () {
     Route::get('/forms/{form}/edit', 'FormController@edit')->name('forms.edit');
     Route::put('/forms/{form}', 'FormController@update')->name('forms.update');
     Route::delete('/forms/{form}', 'FormController@destroy')->name('forms.destroy');
-
 });
 
