@@ -18,7 +18,7 @@
                     <div class="md:w-2/3">
                         <div>
                             <pre class="bg-gray-300 px-4 py-6 shadow rounded mb-4 overflow-y-scroll"><code
-                                    class="text-gray-700 text-sm" id="formLink">http://localhost:3000/api/forms/{{ $form->token }}</code></pre>
+                                    class="text-gray-700 text-sm" id="formLink">{{ $form->tokenLink }}</code></pre>
                             <copy-to-clipboard selector="formLink" text="Copy Embed Code" />
                         </div>
                     </div>

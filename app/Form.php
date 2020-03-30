@@ -9,6 +9,7 @@ class Form extends Model
 {
     protected $guarded = [];
     protected $with = ['submissions'];
+    protected $appends = ['tokenLink'];
 
     protected static function booted()
     {
@@ -20,5 +21,10 @@ class Form extends Model
     public function submissions()
     {
         return $this->hasMany(Submission::class);
+    }
+
+    public function getTokenLinkAttribute()
+    {
+        return config('app.url') . '/' . $this->token;
     }
 }

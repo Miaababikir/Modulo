@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1be674ad-9c5e-4025-a798-dd4bd9fe074f" name="Default Changelist" comment="" />
+    <list default="true" id="1be674ad-9c5e-4025-a798-dd4bd9fe074f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/forms/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/forms/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/forms/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +187,7 @@
       <workItem from="1585284995064" duration="10157000" />
       <workItem from="1585370909085" duration="29000" />
       <workItem from="1585370956862" duration="12097000" />
-      <workItem from="1585542825707" duration="18625000" />
+      <workItem from="1585542825707" duration="18902000" />
     </task>
     <servers />
   </component>
