@@ -19,7 +19,7 @@ class SubmissionController extends Controller
 
         $form->submissions()->create(['data' => json_encode(\request()->all())]);
 
-        return response()->json(['message' => 'Created']);
+        return redirect()->back();
 
     }
 }
