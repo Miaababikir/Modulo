@@ -10,9 +10,11 @@ An open source app that provides you with form endpoints as a service for free, 
 - [x] User can use these endpoints to submit and store data
 - [x] User can edit his forms configurations
 - [ ] Submissions can be forwarded to user email
+- [ ] User can set redirect URL for the submissions
 
 ## Refactoring and other things
 - [ ] Responsive things (landing page, submissions list)
+- [ ] Improving the UI design
 - [ ] Refactoring tailwind css classes
 - [ ] Adding more feature test
 - [ ] Complete the user account page

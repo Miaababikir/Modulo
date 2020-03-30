@@ -1964,7 +1964,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   filters: {
     toTitle: function toTitle(value) {
-      if (value != null) return value;
+      if (value.title != null) return value.title;
+      if (value.name != null) return value.name;
       return '(Untitled!)';
     },
     toBody: function toBody(value) {
@@ -20290,7 +20291,7 @@ var render = function() {
             _c("div", { staticClass: "px-4 py-6" }, [
               _c("div", { staticClass: "flex justify-between items-center" }, [
                 _c("span", { staticClass: "text-gray-700 text-lg font-bold" }, [
-                  _vm._v(_vm._s(_vm._f("toTitle")(submission.data.title)))
+                  _vm._v(_vm._s(_vm._f("toTitle")(submission.data)))
                 ]),
                 _vm._v(" "),
                 _c("span", { staticClass: "text-gray-700 text-sm" }, [
@@ -20317,7 +20318,17 @@ var render = function() {
       [
         _vm.selected !== null
           ? _c("div", [
-              _vm._m(0),
+              _c("div", { staticClass: "py-4" }, [
+                _c("div", { staticClass: "flex flex-col" }, [
+                  _c("h2", { staticClass: "text-2xl text-teal-400" }, [
+                    _vm._v(_vm._s(_vm._f("toTitle")(_vm.selected.data)))
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "mt-3 text-gray-700" }, [
+                    _vm._v(_vm._s(_vm.selected.created_at))
+                  ])
+                ])
+              ]),
               _vm._v(" "),
               _c("hr", { staticClass: "my-4" }),
               _vm._v(" "),
@@ -20345,24 +20356,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "py-4" }, [
-      _c("div", { staticClass: "flex flex-col" }, [
-        _c("h2", { staticClass: "text-2xl text-teal-400" }, [
-          _vm._v("John Doe")
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "mt-3 text-gray-700" }, [
-          _vm._v("Friday March 27, 2020 at 6:36am")
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

@@ -14,8 +14,8 @@
                  @click="setSelected(submission)" :class="isSelected(submission)? 'bg-gray-300' : ''">
                 <div class="px-4 py-6">
                     <div class="flex justify-between items-center">
-                        <span class="text-gray-700 text-lg font-bold">{{ submission.data.title | toTitle}}</span>
-                        <span class="text-gray-700 text-sm">{{ submission.created_at}}</span>
+                        <span class="text-gray-700 text-lg font-bold">{{ submission.data | toTitle}}</span>
+                        <span class="text-gray-700 text-sm">{{ submission.created_at }}</span>
                     </div>
                     <p class="mt-6 text-sm text-gray-600">{{ submission.data.body | toBody}}</p>
                 </div>
@@ -25,8 +25,8 @@
             <div v-if="selected !== null">
                 <div class="py-4">
                     <div class="flex flex-col">
-                        <h2 class="text-2xl text-teal-400">John Doe</h2>
-                        <p class="mt-3 text-gray-700">Friday March 27, 2020 at 6:36am</p>
+                        <h2 class="text-2xl text-teal-400">{{ selected.data | toTitle}}</h2>
+                        <p class="mt-3 text-gray-700">{{ selected.created_at }}</p>
                     </div>
                 </div>
                 <hr class="my-4">
@@ -55,7 +55,8 @@
         },
         filters: {
             toTitle(value) {
-                if (value != null) return value;
+                if (value.title != null) return value.title;
+                if (value.name != null) return value.name;
                 return '(Untitled!)'
             },
             toBody(value) {
